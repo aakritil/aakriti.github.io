@@ -9,7 +9,6 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
     site: 'https://aakritil.github.io',
-    base: '/astrofy',
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
