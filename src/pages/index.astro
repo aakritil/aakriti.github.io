@@ -10,68 +10,76 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-xl py-1"> hi! :)</div>
+    <div class="text-5xl font-bold">I'm Aakriti Lakshmanan</div>
+    <div class="text-3xl py-3 font-bold">CS 👾 + Bio 🧬 @ Stanford University 🌲</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        Some things I’m passionate about: research (microbiology, inorganic chemistry, bioinformatics), drug discovery (specifically on how we can apply computational biology to redefine therapeutics), the microbiome (I just think it’s super cool) and sewing (I’d include those projects on here too, but there would be no space). 
+        <br>
+        <br>
+        I’m always looking for new opportunities and projects to build my interpersonal skills and apply my current technical skills to improve the lives of those around me. If you’d like to chat, feel free to reach out to aakritil@stanford.edu.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+      <a class="btn" href="https://www.linkedin.com/in/aakriti-lakshmanan/" target="_blank"> Let's connect!</a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">my passion (in 2-min video form): </div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="2022 (click me! 🌟)"
+    img="/section.png"
+    desc="My summer at Octant Bio, my exploration of computational biology research + education, and serving as a mentor/section leader in CS"
+    url="https://youtu.be/AJ7Ml_ECbS4"
+    badge=""
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="2021"
+    img="/2020.png"
+    desc="Graduating from high school + community college, my start at Stanford and my summer at Cellular Longevity"
+    url="https://youtu.be/PZGdcT8zT0w"
+    badge=""
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="2020"
+    img="/2019.jpg"
+    desc="An introduction to my passions - where they started, and where I aim for them to reach."
+    url="https://vimeo.com/501971816/96d8e6a099"
+    badge=""
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">what I've been up to recently:</div>
   </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+  
+  <HorizontalCard
+    title="Data Science Intern @ Recursion Pharmaceuticals"
+    img="/recursion.jpg"
+    desc="Creating an integrated database to connect 5 different modalities of biological data enabling data-supported inference"
+    url="https://www.recursion.com"
+    badge="present"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Research Intern @ Stanford NLP"
+    img="/224n.png"
+    desc="Conducting research on increasing the interpretability of LLMs and understanding their use of syntactic information"
+    url="#"
+    badge="present"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Software Engineering Intern @ Octant Bio"
+    img="/octant.webp"
+    desc="Enhanced the in-house laboratory information management system to support a broader range of experimental designs utilizing Django, React, and TypeScript"
+    url="https://www.octant.bio"
+    badge="summer-2022"
+  />
 </BaseLayout>
+

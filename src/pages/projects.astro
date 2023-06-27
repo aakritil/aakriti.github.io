@@ -3,49 +3,45 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title = "projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="A Markov-Based Approach to Evaluate the Optimal Position of Zeposia in the Treatment of Ulcerative Colitis"
+    desc="This project aims to find the optimal position of zeposia in the current treatment paradigm utilizing a Markov-based simulation. An MDP model was built utilizing transition probabilities collected from prior literature, a combination of disease/medication/absorbing states, and rewards represented by quality-adjusted life-year (QALY) estimates."
     url="#"
-    badge="NEW"
+    badge=""
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="KNN and GSEA for Genetic Data"
+    desc="Implemented the KNN and GSEA algorithms from scratch in Python for use in interpreting genetic data and gene sets"
     url="#"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">research</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Synthesis of New Silver Complexes with Anticancer Activity (click for presentation)"
+    desc="Within this project, four different silver complexes have been synthesized with a saturated pyrimidine 6-membered ring. All four compounds have been fully characterized using 1H- and 13C-NMR data, IR data, melting point, and X-ray crystallization. Presented at the 15th Annual State of North Carolina Undergraduate Research and Creativity Symposium, Duke University, Durham, NC, United States, Nov 23, 2019; Poster S3-43"
+    url="https://youtu.be/o-kfynmsWSY"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="A Study on the Coagulating Properties of the M. oleifera Seed (click for presentation)"
+    desc="The purpose of this study was to analyze the coagulating efficiency of the seed and to test a new and innovative way to utilize the seed. When the part of the seed responsible for the coagulating properties was isolated and combined with sand, a new functionalized-sand (f-sand) was created. This research aimed to determine how effectively the M. oleifera Cationic Protein (MOCP) functionalized-sand reduces the amount of bacteria compared to other filtration techniques. Presented at the 2019 AAAS Annual Meeting, Washington, DC, United States, Feb 14-17, 2019"
+    url="https://www.youtube.com/watch?v=J-_-kUmiuCY"
   />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    <div class="divider my-0"></div>
+
+    <HorizontalCard
+    title="Optimization of Biophotovoltaic Devices"
+    img=""
+    desc="This project aims to examine the efficiency of various models of biophotovoltaics in order to see which model would produce the highest voltage output. Different strains of microalgae and different modes of electron transport to the anode were tested. For direct transport, the algae were grown as a biofilm on a conductive surface, while indirect transport systems utilized potassium ferrocyanide as an electron transfer mechanism between the anode and the algae. "
     url="#"
   />
 </BaseLayout>
